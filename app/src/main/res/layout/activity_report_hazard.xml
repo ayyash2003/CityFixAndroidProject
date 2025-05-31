@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/camera"
         android:contentDescription="Capture Image"
+        android:onClick="captureImageButtonOnClick"
         android:background="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@id/locationTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:onClick="submitHazardButtonOnClick"
         app:layout_constraintTop_toBottomOf="@id/hazardDescriptionEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,6 +81,7 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:src="@drawable/profile"
+            android:onClick="profileButtonOnClick"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Profile"
             android:scaleType="centerInside"
@@ -92,6 +96,7 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:src="@drawable/home"
+            android:onClick="homeButtonOnClick"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Home"
             android:scaleType="centerInside"
@@ -107,6 +112,7 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:src="@drawable/bell"
+            android:onClick="bellButtonOnClick"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Bell"
             android:scaleType="centerInside"
@@ -117,5 +123,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
